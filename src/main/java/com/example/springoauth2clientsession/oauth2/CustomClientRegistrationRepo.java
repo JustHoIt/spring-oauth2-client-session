@@ -2,7 +2,6 @@ package com.example.springoauth2clientsession.oauth2;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;
 import org.springframework.security.oauth2.client.registration.InMemoryClientRegistrationRepository;
 
 @Configuration
@@ -10,7 +9,7 @@ import org.springframework.security.oauth2.client.registration.InMemoryClientReg
 public class CustomClientRegistrationRepo {
     private final SocialClientRegistration socialClientRegistration;
 
-    public ClientRegistrationRepository clientRegistrationRepository() {
+    public InMemoryClientRegistrationRepository clientRegistrationRepository() {
 
         return new InMemoryClientRegistrationRepository(
                 socialClientRegistration.naverClientRegistration(),
