@@ -6,7 +6,6 @@ import com.example.springoauth2clientsession.dto.CustomOAuth2User;
 import com.example.springoauth2clientsession.dto.GoogleResponse;
 import com.example.springoauth2clientsession.dto.NaverResponse;
 import com.example.springoauth2clientsession.dto.OAuth2Response;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;

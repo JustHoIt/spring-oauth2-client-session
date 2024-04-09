@@ -21,7 +21,7 @@ spring:
         registration.naver.client-secret: ${naver.client-secret}
         registration.naver.redirect-uri: http://localhost:8080/login/oauth2/code/naver
         registration.naver.authorization-grant-type: authorization_code
-        registration.naver.scope: name,email
+        registration.naver.scope: name, email
         #google
         registration.google.client-name: google
         registration.google.client-id: ${google.client-id}
